@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url('img/backgroundImage.png');
+    background-color: blanchedalmond;
+   
+}
+.mainBox{
+    width:100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* align-items: center; */ 
+    width:320px ;
+    height: 550px;
+    /* border:2px solid red; */
+    background-color: rgba(0, 0, 0, 0.519);
+
+}
+.display{
+   width:300px;
+   /* border:1px solid black; */
+   border-radius: 10px;
+   height: 7rem;
+   margin-top: 5px;
+   background-color: rgba(0, 0, 0, 0.445);
+   color:white;
+   align-items: left;
+   border:2px solid green;
+   /* float:left; */
+   display: inline-block;
+   /* overflow-y: hidden; */
+   overflow:hidden;
+   white-space: nowrap;
+}
+#his{
+   font-size: 20px;
+    text-align: right;
+    color:grey;
+    margin:10px 10px;
+}
+#result{
+   font-size: 50px;
+    text-align: right;
+    margin:10px 10px;
+    border: none;
+    outline: none;
+    direction: rtl; 
+}
+.operator,.number,.empty{
+    width:50px;
+    height: 50px;
+    /* padding:10px; */
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    
+}
+.operator{
+    font-weight: bold;
+}

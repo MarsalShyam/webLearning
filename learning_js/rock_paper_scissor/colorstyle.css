@@ -1,0 +1,17 @@
+.violet-background{
+    background-color: violet;
+    color:white
+}
+.blue-background{
+    background-color:rgb(120, 26, 208) ;
+    color:white;
+}
+.sky-background{
+    background-color: rgb(12, 139, 189);
+    color:white;
+}
+.display-flex-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "twitterclone",
+  "version": "1.0.0",
+  "description": "It is the clone of twitter using tailwindcss framework",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "keywords": [
+    "twitter",
+    "twitterclone",
+    "twitterclonetailwindcss"
+  ],
+  "author": "Shyam",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}

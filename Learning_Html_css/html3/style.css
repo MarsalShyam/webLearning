@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+div{
+    height:100px;
+    width: 100px;
+    background-color: aqua;
+    border:2px solid black;
+    display:inline-block;
+    
+}
+#box1{
+    position: static;
+}
+#box2{
+    background-image: url("rm.jpg");
+    background-size: cover;
+    position: relative;
+    top:60px;
+}
+#box3{
+    position:absolute;
+    top:10px;
+    left:20px;
+}
+#box4{
+    position:fixed;
+    right:10px;
+    top:0;
+    width:100vw;
+}
+#box5{
+    position:sticky;
+    right:0;
+    top:70
+    0px;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "chatingapp",
+  "version": "1.0.0",
+  "description": "this is the chating app there people can chat each other on server",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chat",
+    "socialmedia"
+  ],
+  "author": "Shyam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "slugify": "^1.6.6"
+  }
+}
