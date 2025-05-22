@@ -6,12 +6,12 @@ let enquiryget=async(req,res)=>{
 }
 let enquiryPost=(req,res)=>{
     // res.send("it is post");
-    let {sName,sEmail,sPhone,sMessage}=req.body;
+    let {name,email,phone,message}=req.body;
     let enquiry=new enquiryModel({
-        name:sName,
-        email:sEmail,
-        phone:sPhone,
-        message:sMessage
+        name,
+        email,
+        phone,
+        message
     })
     enquiry.save().then(()=>{
         res.send({status:1,message:"Enquiry saved successfully"});
@@ -28,12 +28,12 @@ let enqiryDelete=async(req,res)=>{
 
 let enquiryPut=async(req,res)=>{
     let enquiryId=req.params.id;
-    let {sName,sEmail,sPhone,sMessage}=req.body;
+    let {name,email,phone,message}=req.body;
     let updatedObj={
-        name:sName,
-        email:sEmail,
-        phone:sPhone,
-        message:sEmail
+        name,
+        email,
+        phone,
+        message
     };
 
     let editedId=await enquiryModel.updateOne({_id:enquiryId},updatedObj)

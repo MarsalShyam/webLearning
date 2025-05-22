@@ -1,6 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+import cors from 'cors';
 // import enquiryModel from '../server/app/models/enquiry_model.js'
 // import { enqiryDelete, enquiryget, enquiryPost, enquiryPut } from './app/controllers/web/enquiryController.js';
 import enquiryRoutes from './app/routes/web/EnquiryRoutes.js';
@@ -8,6 +9,7 @@ dotenv.config();
 
 let app=express();
 app.use(express.json());
+app.use(cors());
 
 app.use('/web/api',enquiryRoutes)
 // app.get("/api/get",enquiryget)

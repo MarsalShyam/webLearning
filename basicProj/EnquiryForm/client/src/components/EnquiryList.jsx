@@ -1,6 +1,7 @@
 import React from 'react'
 
 const EnquiryList = () => {
+  
   return (
     
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
